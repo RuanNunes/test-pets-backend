@@ -32,12 +32,18 @@ projeto, contudo a velocidade de entrega é importante. Este projeto pode ser de
 horas. Quanto mais rápido você conseguir entregá-lo melhor. Sinta-se à vontade para incluir outras
 funcionalidades e usar as bibliotecas que preferir.
 ````
-# requiremts
+# requirements
 
 
 # install docker and docker-compose
 - [install docker](https://hub.docker.com/?overlay=onboarding&step=download)  
 - [install docker-compose](https://docs.docker.com/compose/install) 
+
+# windows requirements
+- [chocolatey](https://chocolatey.org/)
+- [Java 14](https://chocolatey.org/packages/adoptopenjdk)
+- [IDE](https://www.jetbrains.com/idea/download/#section=windows)
+- [Lombook](https://projectlombok.org/setup/intellij)  
 
 # mac requirements
 - [brew](https://brew.sh/index_pt-br)
