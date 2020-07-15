@@ -1,0 +1,6 @@
+FROM postgres:12
+
+ENV POSTGRES_DB=test-pets-db \
+    POSTGRES_PASSWORD=123
+
+EXPOSE 5432

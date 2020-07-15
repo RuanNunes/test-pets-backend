@@ -1,0 +1,25 @@
+version: '3.4'
+services:
+  test-pets-db-postgres:
+    container_name: test-pets-db-postgres
+    build:
+      context: .
+      dockerfile: postgres.DockerFile
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_DB=test-pets-db
+      - POSTGRES_PASSWORD=123
+
+  test-pets-api-java:
+    container_name: test-pets-api
+    build:
+      context: .
+      dockerfile: dev.DockerFile
+    depends_on:
+      - test-pets-db-postgres
+    ports:
+      - "8080:8080"
+    environment:
+      - DB_URL=test-pets-db-postgres:5432
+
